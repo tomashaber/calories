@@ -1,0 +1,21 @@
+<div class="container" fade-in ng-controller="UserSettingsController">
+
+    <h1 class="text-left">Your profile</h1>
+
+    <form>
+        <div class="form-group">
+            <label for="expectedCalories">Expected number of calories per day</label>
+            <input type="number" class="form-control" id="expectedCalories" min="1" ng-model="expectedCalories">
+        </div>
+
+        <div class="alert alert-warning" role="alert" ng-show="warning != null">
+            Your settings have been modified in the meantime. Your are now seeing the new values. Changes you have made have not been saved, please resubmit.
+        </div>
+        <div class="alert alert-danger" role="alert" ng-show="error != null">
+            There has been an error while saving your preferences
+        </div>
+
+        <button type="button" class="btn btn-primary pull-right" ng-click="update(expectedCalories)">Submit</button>
+    </form>
+
+</div>

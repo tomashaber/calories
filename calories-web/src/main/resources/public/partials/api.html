@@ -1,0 +1,35 @@
+<div class="container" fade-in>
+
+    <h1 class="text-left">REST API</h1>
+
+    <div class="api">
+        <h2 class="text-left">
+            Authorization
+        </h2>
+        <p>POST /auth/login</p>
+
+        <p>GET /auth/logout</p>
+        <h2 class="text-left">
+            User
+        </h2>
+
+        <p><span>POST /api/user/register</span>Registers new user</p>
+        <p><span>POST /api/user/password</span>Changes password</p>
+        <p><span>OST /api/user/me</span>Updates current user</p>
+        <p><span>GET /api/user/me</span>Returns current user</p>
+
+        <h2 class="text-left">
+            Meal
+        </h2>
+
+        <p><span>POST /api/meal</span>Creates new meal</p>
+        <p><span>GET /api/meal/{mealId}</span>Returns meal by id</p>
+        <p><span>POST /api/meal/{mealId}</span>Updates meal</p>
+        <p><span>DELETE /api/meal/{mealId}/{version}</span>Deletes meal</p>
+        <p><span>GET /api/meal/all</span>Returns all meals for user</p>
+        <p><span>GET /api/meal/find</span>Finds meals for user</p>
+
+    </div>
+
+</div>
+
